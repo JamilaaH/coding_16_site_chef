@@ -15951,6 +15951,14 @@ header .navbar .navbar-nav {
   font-family: 'ubuntu';
 }
 
+header .navbar .navbar-nav .nav-link:hover {
+  background-color: #B12A3B;
+}
+
+header .navbar .navbar-nav .nav-link:active {
+  background-color: #B12A3B !important;
+}
+
 header .carousel {
   position: absolute;
   top: 0;

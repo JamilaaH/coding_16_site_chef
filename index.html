@@ -1,13 +1,91 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Site du chef</title>
     <link rel="stylesheet" href="./public/css/app.css">
 </head>
+
 <body>
-    
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-transparent">
+            <div class="navbar-collapse collapse  dual-collapse2 order-1 order-md-0">
+                <ul class="navbar-nav ml-auto text-center border-bottom border-top w-60">
+                    <li class="nav-item active mx-1">
+                        <a class="nav-link" href="#">Home</a>
+                    </li>
+                    <li class="nav-item mx-1">
+                        <a class="nav-link" href="#">about us</a>
+                    </li>
+                    <li class="nav-item mx-1">
+                        <a class="nav-link" href="#">menu list</a>
+                    </li>
+                    <li class="nav-item mx-1">
+                        <a class="nav-link" href="#">team</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="mx-auto my-2 order-0 order-md-1 position-relative">
+                <a class="mx-auto px-3" href="#">
+                    <img src="./public/img/logo.png" width="30" >
+                </a>
+                <button class="navbar-toggler " type="button" data-toggle="collapse" data-target=".dual-collapse2">
+                    <span class="navbar-toggler-icon "></span>
+                </button>
+            </div>
+            <div class="navbar-collapse collapse dual-collapse2 order-2 order-md-2">
+                <ul class="navbar-nav mr-auto text-center border-bottom border-top w-60">
+                    <li class="nav-item mx-1">
+                        <a class="nav-link " href="#">reservation</a>
+                    </li>
+                    <li class="nav-item mx-1">
+                        <a class="nav-link" href="#">blog</a>
+                    </li>
+                    <li class="nav-item mx-1">
+                        <a class="nav-link" href="#">testimonials</a>
+                    </li>
+                    <li class="nav-item mx-1">
+                        <a class="nav-link" href="#">contact us</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <div id="carouselExampleIndicators" class="carousel w-100 slide" data-ride="carousel">
+            <div class="contenu">
+                <ol class="carousel-indicators">
+                    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                </ol>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="./public/img/banner1.jpg" class="img-fluid" alt="...">
+
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./public/img/banner1.jpg" class="img-fluid" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./public/img/banner1.jpg" class="img-fluid" alt="...">
+                    </div>
+                </div>
+                <div class="main-text row">
+                    <div class="col-12 col-md-8 offset-md-2  text-md-center">
+                        <h1 class="title">Whatever your OCCASION, <span class="text-red">TASTE</span> makes it one to remenber</h1>
+                        <div class="btn d-flex flex-column flex-md-row justify-content-md-center aligns-item-sm-center mt-md-3">
+                            <button type="button" class="btn btn-light mx-md-2 px-md-3 py-md-2">Purchase theme</button>
+                            <button type="button" class="btn btn-red mx-md-2 px-md-3 py-md-2">learn more</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        <div class="decor"></div>
+    </header>
+
+
 
 
 
@@ -18,4 +96,5 @@
     <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
     <script src="./node_modules/bootstrap/dist/js/bootstrap.js"></script>
 </body>
+
 </html>

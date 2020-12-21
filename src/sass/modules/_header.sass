@@ -1,0 +1,90 @@
+header
+    position: relative
+    .navbar
+        .navbar-nav
+            text-transform: uppercase
+            font-family: 'ubuntu'
+
+    .carousel
+        position: absolute
+        top: 0
+        z-index: -99
+        height: 90px
+        .carousel-inner
+            img
+                filter: brightness(0.3)
+
+    .contenu
+        position: relative
+        .main-text
+            font-family: 'courgette'
+            position: absolute
+            bottom: 30%
+            left: 15%
+            width: 70%
+            color: #FFF
+
+            .btn
+                font-family: 'ubuntu'
+                text-transform: uppercase
+                border-radius: 20px
+
+    .decor
+        background-image: url('../img/bottom_decoration_img.png')
+        height: 10px
+        background-color: black
+        opacity: 0.7
+        
+
+
+@media (max-width: 375px)
+    header
+        .navbar-collapse
+            background-color: white
+            .nav-link
+                color: black !important
+        .contenu
+            .main-text
+                bottom: 0
+                left: 20%
+                .title
+                    text-align: center
+                    font-size: 20px
+                .btn
+                    padding: 0
+        
+@media (min-width: 376px) and (max-width: 575px)
+    header
+        .navbar-collapse
+            background-color: white
+            .nav-link
+                color: black !important
+        .contenu
+            .main-text
+                bottom: 0
+                .title
+                    text-align: center
+                    font-size: 35px
+
+                .btn
+                    padding: 0
+        
+@media (min-width: 576px) and (max-width: 768px)
+    header
+        .navbar-collapse
+            background-color: white
+            .nav-link
+                color: black !important
+        .contenu
+            .main-text
+                bottom: 15%
+
+                .title
+                    text-align: center
+                    font-size: 35px
+
+                .btn
+                    padding: 0
+        
+
+

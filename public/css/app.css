@@ -15946,6 +15946,10 @@ body {
   background-image: url("../img/main_bg.jpg");
 }
 
+body .title {
+  font-family: 'courgette';
+}
+
 header {
   position: relative;
   height: 67vw;
@@ -16192,4 +16196,12 @@ header .decor {
     margin: 7px auto;
     display: block;
   }
+}
+
+#contact .info {
+  border-radius: 20px;
+}
+
+#contact .info .icon {
+  font-size: 40px;
 }

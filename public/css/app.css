@@ -15942,8 +15942,13 @@ a.text-red:hover, a.text-red:focus {
   }
 }
 
+body {
+  background-image: url("../img/main_bg.jpg");
+}
+
 header {
   position: relative;
+  height: 67vw;
 }
 
 header .navbar .navbar-nav {
@@ -15963,7 +15968,6 @@ header .carousel {
   position: absolute;
   top: 0;
   z-index: -99;
-  height: 90px;
 }
 
 header .carousel .carousel-inner img {
@@ -16051,5 +16055,47 @@ header .decor {
   }
   header .contenu .main-text .btn {
     padding: 0;
+  }
+}
+
+#menu .title {
+  font-family: 'courgette';
+}
+
+#menu .list-group-item {
+  text-align: center;
+  font-family: 'courgette';
+  font-size: 18px;
+}
+
+#menu .list-group-item .active {
+  background-color: white !important;
+  border: none;
+}
+
+#menu .list-group-item:active {
+  background-color: #ffffff;
+  border-right: 5px #B12A3B solid;
+  color: #B12A3B;
+}
+
+#menu .list-group-item:focus {
+  background-color: #ffffff !important;
+  border-right: 5px #B12A3B solid;
+  color: #B12A3B;
+}
+
+#menu .list-group-item i {
+  font-size: 35px;
+}
+
+@media (max-width: 426px) {
+  #menu img {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+  }
+  #menu .contenu {
+    text-align: center;
   }
 }

@@ -1,0 +1,31 @@
+#menu
+    .title
+        font-family: 'courgette'
+    .list-group-item
+        text-align: center
+        font-family: 'courgette'
+        font-size: 18px
+        .active
+            background-color: white !important
+            border: none
+        &:active 
+            background-color: #ffffff 
+            border-right: 5px $colorRed solid
+            color: $colorRed
+        &:focus
+            background-color: #ffffff !important
+            border-right: 5px $colorRed solid
+            color: $colorRed
+
+            
+        i
+            font-size: 35px
+
+@media (max-width: 426px)
+    #menu
+        img
+            margin-left: auto
+            margin-right: auto
+            display: block
+        .contenu
+            text-align: center

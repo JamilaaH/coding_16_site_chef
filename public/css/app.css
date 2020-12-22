@@ -16205,3 +16205,34 @@ header .decor {
 #contact .info .icon {
   font-size: 40px;
 }
+
+.decor-bot {
+  background-image: url("../img/footer_bottom_decoration_img.png");
+  height: 10px;
+  background-color: black;
+  opacity: 0.7;
+}
+
+#footer {
+  background-image: url("../img/footer_background.jpg");
+  color: white;
+}
+
+#footer h4 {
+  font-family: 'ubuntu';
+  text-transform: uppercase;
+}
+
+#footer .list-inline-item i {
+  color: white;
+}
+
+#footer .about {
+  width: 400px;
+}
+
+@media (max-width: 426px) {
+  #footer .about {
+    width: 100%;
+  }
+}

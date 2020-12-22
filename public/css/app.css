@@ -16099,3 +16099,16 @@ header .decor {
     text-align: center;
   }
 }
+
+#team {
+  background-image: url("../img/team_background.jpg");
+}
+
+#team .title {
+  font-family: 'courgette';
+  color: white;
+}
+
+#team .chef img {
+  width: 70%;
+}

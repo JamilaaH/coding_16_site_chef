@@ -16112,3 +16112,31 @@ header .decor {
 #team .chef img {
   width: 70%;
 }
+
+#book .title {
+  font-family: 'courgette';
+}
+
+#book .fond {
+  background-image: url("../img/book_table_bg.jpg");
+  border-radius: 15px;
+}
+
+#book .fond h3 {
+  color: white;
+}
+
+#book .btn {
+  text-transform: uppercase;
+  border-radius: 20px;
+}
+
+@media (max-width: 426px) {
+  #book {
+    padding: 0;
+    margin: 0;
+  }
+  #book .fond {
+    border-radius: 0;
+  }
+}

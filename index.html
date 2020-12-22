@@ -112,8 +112,8 @@
                 <!-- onglet de gauche -->
                 <div class="ml-md-0 pl-md-0 col-12 col-md-2 col-lg-2 col-xl">
                     <div class="list-group" id="list-tab" role="tablist">
-                        <a class="list-group-item list-group-item-action " id="onglet1" data-toggle="list" href="#o1"
-                            role="tab" aria-controls="onglet1"> <i class="fas fa-mug-hot"></i> <br>
+                        <a class="list-group-item list-group-item-action active" id="onglet1" data-toggle="list"
+                            href="#o1" role="tab" aria-controls="onglet1"> <i class="fas fa-mug-hot"></i> <br>
                             Breakfast</a>
                         <a class="list-group-item list-group-item-action" id="onglet2" data-toggle="list" href="#o2"
                             role="tab" aria-controls="onglet2"><i class="fas fa-hamburger"></i><br> Lunch</a>
@@ -524,25 +524,98 @@
     </section>
 
 
-        <!-- section menu -->
-        <section class="container bg-light position-relative mt-5 py-5" id="menu">
-            <img class="position-absolute" style="top: 0%; right: 0%;" src="./public/img/box-right-top.png" alt="">
-            <img class="position-absolute" style="top: 0%; left: 0%;" src="./public/img/box-left-top.png" alt="">
-            <img class="position-absolute" style="bottom: 0%; right: 0%;" src="./public/img/box-bottom_right.png" alt="">
-            <img class="position-absolute" style="bottom: 0%; left: 0%;" src="./public/img/box-bottom-left.png" alt="">
-            <div class="contenuStory d-flex flex-column justify-content-md-center">
-                <h1 class=" title text-center"> <span class="text-red">Our</span> story</h1>
-                <img src="./public/img/decoration_line.png" alt="" class="mx-md-auto mx-0 mb-4">
-                <p class="mx-auto text-center w-50">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestias
-                    nulla ad repudiandae illum. Provident
-                    itaque necessitatibus voluptatibus. Voluptatum, qui reprehenderit velit illo architecto perferendis
-                    delectus laudantium iure, quibusdam est cumque! Lorem, ipsum dolor sit amet consectetur adipisicing
-                    elit. Nobis dignissimos quae labore possimus, molestias, officia eligendi modi itaque voluptatum
-                    consectetur aliquid? Perferendis pariatur nesciunt, perspiciatis magnam corrupti qui enim mollitia.</p>
-    
-                <h1 class=" title text-center mt-3"> <span class="text-red">Our</span> Menu List</h1>
-                <img src="./public/img/decoration_line.png" alt="" class="mx-md-auto mx-0 mb-4">
-        </section>
+    <!-- section book -->
+    <section class="container bg-light position-relative mt-5 py-5" id="book">
+        <img class="position-absolute" style="top: 0%; right: 0%;" src="./public/img/box-right-top-grey.png" alt="">
+        <img class="position-absolute" style="top: 0%; left: 0%;" src="./public/img/box-left-top-grey.png" alt="">
+        <img class="position-absolute" style="bottom: 0%; right: 0%;" src="./public/img/box-bottom_right-grey.png"
+            alt="">
+        <img class="position-absolute" style="bottom: 0%; left: 0%;" src="./public/img/box-bottom-left-grey.png" alt="">
+        <div class="contenuStory d-flex flex-column justify-content-md-center">
+            <h1 class=" title text-center"> <span class="text-red">BOOK</span> Your Table</h1>
+            <img src="./public/img/decoration_line.png" alt="" class="mx-md-auto mx-0 mb-4">
+        
+        <!-- formulaire -->
+        <div class="row container justify-content-center mx-md-auto mx-0">
+            <div class="fond p-md-5 p-0 d-flex align-items-center flex-column" >
+                <form action="#">
+                    <h3 class="pb-2 "> <span class="font-weight-light">For any query please call us at </span> : +91-12345678</h3>
+
+                    <div class="row ">
+                        <div class="col-12 col-md-6 mb-3">
+                            <input type="text" class="form-control" placeholder="Enter full name">
+                        </div>
+                        <div class="col-12 col-md-6 ">
+                            <input type="text" class="form-control" placeholder="Enter ID">
+                        </div>
+                    </div>
+
+                    <div class="row my-3">
+                        <div class="col-12 col-md-6 mb-3">
+                            <input type="text" class="form-control" placeholder="Phone Number">
+                        </div>
+                        <div class="col-12 col-md-6 ">
+                            <select name="personnes" class="custom-select">
+                                <option selected>How many persons</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                                <option value="6">6</option>
+                                <option value="7">7</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-12 col-md-6 mb-3">
+                            <input type="date" class="form-control" id="start" name="trip-start" value="2020-12-22"
+                                min="2020-12-22" max="2025-12-31">
+                        </div>
+                        <div class="col-12 col-md-6 ">
+                            <input type="time" id="appt" name="appt" class="form-control" min="09:00" max="23:00"
+                                value="17:30" required>
+                        </div>
+                    </div>
+
+                    <div class="row my-3">
+                        <div class="col-12 col-md-6 mb-3">
+                            <select name="personnes" class="custom-select">
+                                <option selected>Occasion</option>
+                                <option value="bh">Birthday</option>
+                                <option value="bp">Bapteme</option>
+                                <option value="evj">EVJ</option>
+                                <option value="m">mariage</option>
+                                <option value="s">soirée</option>
+                            </select>
+                        </div>
+                        <div class="col-12 col-md-6 ">
+                            <select name="personnes" class="custom-select">
+                                <option selected>Cuisine</option>
+                                <option value="T">Thai</option>
+                                <option value="G">Gastronomie</option>
+                                <option value="A">Asiatique</option>
+                                <option value="M">Marocaine</option>
+                                <option value="5">Menu 5 plats</option>
+                            </select>
+                        </div>
+                    </div>
+
+                </form>
+                <button type="button" class="btn btn-red mx-md-auto my-3 px-md-4 py-md-2 ">Book now</button>
+            </div>
+
+        </div>
+
+        <!-- blog -->
+        <h1 class=" title mt-5 text-center"> <span class="text-red text-uppercase">our</span> Blog</h1>
+        <img src="./public/img/decoration_line.png" alt="" class="mx-md-auto mx-0 mb-4">
+
+
+
+        </div>
+    </section>
 
 
 

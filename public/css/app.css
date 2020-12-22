@@ -16140,3 +16140,40 @@ header .decor {
     border-radius: 0;
   }
 }
+
+#blog .carte {
+  position: relative;
+}
+
+#blog .carte .entete .card-img-top {
+  border-radius: 25px;
+  padding: 5px;
+  background-color: lightgrey;
+}
+
+#blog .carte .entete .info {
+  background-color: #B12A3B;
+  color: white;
+  font-family: 'ubuntu';
+  position: absolute;
+  bottom: 26%;
+  left: 10%;
+  padding: 13px;
+  border-radius: 15px;
+}
+
+@media (max-width: 426px) {
+  #blog .carte .entete .info {
+    bottom: 40%;
+    left: 10%;
+    padding: 5px;
+    border-radius: 15px;
+  }
+}
+
+@media (min-width: 427px) and (max-width: 769px) {
+  #blog .carte .entete .info {
+    bottom: 44%;
+    padding: 3px;
+  }
+}

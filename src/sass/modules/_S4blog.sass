@@ -1,0 +1,36 @@
+#blog
+    .carte
+        position: relative
+        .entete
+            .card-img-top
+                border-radius: 25px
+                padding: 5px
+                background-color: lightgrey
+            .info
+                background-color: $colorRed 
+                color: white
+                font-family: 'ubuntu'
+                position: absolute
+                bottom: 26%
+                left: 10%
+                padding: 13px
+                border-radius: 15px
+
+
+@media ( max-width: 426px )
+    #blog
+        .carte
+            .entete
+                .info
+                    bottom: 40%
+                    left: 10%
+                    padding: 5px
+                    border-radius: 15px
+
+@media (min-width: 427px) and (max-width: 769px)
+    #blog
+        .carte
+            .entete
+                .info
+                    bottom: 44%
+                    padding: 3px

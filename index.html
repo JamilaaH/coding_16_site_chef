@@ -534,88 +534,130 @@
         <div class="contenuStory d-flex flex-column justify-content-md-center">
             <h1 class=" title text-center"> <span class="text-red">BOOK</span> Your Table</h1>
             <img src="./public/img/decoration_line.png" alt="" class="mx-md-auto mx-0 mb-4">
-        
-        <!-- formulaire -->
-        <div class="row container justify-content-center mx-md-auto mx-0">
-            <div class="fond p-md-5 p-0 d-flex align-items-center flex-column" >
-                <form action="#">
-                    <h3 class="pb-2 "> <span class="font-weight-light">For any query please call us at </span> : +91-12345678</h3>
 
-                    <div class="row ">
-                        <div class="col-12 col-md-6 mb-3">
-                            <input type="text" class="form-control" placeholder="Enter full name">
+            <!-- formulaire -->
+            <div class="row container justify-content-center mx-md-auto mx-0">
+                <div class="fond p-md-5 p-0 d-flex align-items-center flex-column">
+                    <form action="#">
+                        <h3 class="pb-3 "> <span class="font-weight-light">For any query please call us at </span> :
+                            +91-12345678</h3>
+
+                        <div class="row ">
+                            <div class="col-12 col-md-6 mb-3">
+                                <input type="text" class="form-control" placeholder="Enter full name">
+                            </div>
+                            <div class="col-12 col-md-6 ">
+                                <input type="text" class="form-control" placeholder="Enter ID">
+                            </div>
                         </div>
-                        <div class="col-12 col-md-6 ">
-                            <input type="text" class="form-control" placeholder="Enter ID">
+
+                        <div class="row my-3">
+                            <div class="col-12 col-md-6 mb-3">
+                                <input type="text" class="form-control" placeholder="Phone Number">
+                            </div>
+                            <div class="col-12 col-md-6 ">
+                                <select name="personnes" class="custom-select">
+                                    <option selected>How many persons</option>
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                    <option value="6">6</option>
+                                    <option value="7">7</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-12 col-md-6 mb-3">
+                                <input type="date" class="form-control" id="start" name="trip-start" value="2020-12-22"
+                                    min="2020-12-22" max="2025-12-31">
+                            </div>
+                            <div class="col-12 col-md-6 ">
+                                <input type="time" id="appt" name="appt" class="form-control" min="09:00" max="23:00"
+                                    value="17:30" required>
+                            </div>
+                        </div>
+
+                        <div class="row my-3">
+                            <div class="col-12 col-md-6 mb-3">
+                                <select name="personnes" class="custom-select">
+                                    <option selected>Occasion</option>
+                                    <option value="bh">Birthday</option>
+                                    <option value="bp">Bapteme</option>
+                                    <option value="evj">EVJ</option>
+                                    <option value="m">mariage</option>
+                                    <option value="s">soirée</option>
+                                </select>
+                            </div>
+                            <div class="col-12 col-md-6 ">
+                                <select name="personnes" class="custom-select">
+                                    <option selected>Cuisine</option>
+                                    <option value="T">Thai</option>
+                                    <option value="G">Gastronomie</option>
+                                    <option value="A">Asiatique</option>
+                                    <option value="M">Marocaine</option>
+                                    <option value="5">Menu 5 plats</option>
+                                </select>
+                            </div>
+                        </div>
+
+                    </form>
+                    <button type="button" class="btn btn-red mx-md-auto my-3 px-md-4 py-md-2 ">Book now</button>
+                </div>
+
+            </div>
+
+            <!-- blog -->
+            <div id="blog" class="contenuStory d-flex flex-column justify-content-md-center pb-5">
+                <h1 class=" title mt-5 text-center"> <span class="text-red text-uppercase">our</span> Blog</h1>
+                <img src="./public/img/decoration_line.png" alt="" class="mx-md-auto mx-0 mb-4">
+
+                <div class="container">
+                    <div class="row mx-md-auto">
+                        <div class="col-12 col-md-6">
+                            <div class="carte">
+                                <div class="entete">
+                                    <img src="./public/img/blog_img1.jpg" class="card-img-top" alt="...">
+                                    <span class="info">12 april 2017/20comments/35likes</span>
+                                </div>
+                                <div class="card-body mt-md-3">
+                                    <h5 class="card-title spec">Lorem, ipsum. </h5>
+                                    <p class="card-text">Some quick example text to build on the card title and make
+                                        up the bulk
+                                        of
+                                        the card's content.</p>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="col-12 col-md-6">
+                            <div class="carte">
+                                <div class="entete">
+                                    <img src="./public/img/blog_img1.jpg" class="card-img-top" alt="...">
+                                    <span class="info">12 april 2017/20comments/35likes</span>
+                                </div>
+                                <div class="card-body mt-md-3">
+                                    <h5 class="card-title spec">Lorem, ipsum. </h5>
+                                    <p class="card-text">Some quick example text to build on the card title and make
+                                        up the bulk
+                                        of
+                                        the card's content.</p>
+                                </div>
+                            </div>
                         </div>
                     </div>
-
-                    <div class="row my-3">
-                        <div class="col-12 col-md-6 mb-3">
-                            <input type="text" class="form-control" placeholder="Phone Number">
-                        </div>
-                        <div class="col-12 col-md-6 ">
-                            <select name="personnes" class="custom-select">
-                                <option selected>How many persons</option>
-                                <option value="1">1</option>
-                                <option value="2">2</option>
-                                <option value="3">3</option>
-                                <option value="4">4</option>
-                                <option value="5">5</option>
-                                <option value="6">6</option>
-                                <option value="7">7</option>
-                            </select>
-                        </div>
-                    </div>
-
-                    <div class="row">
-                        <div class="col-12 col-md-6 mb-3">
-                            <input type="date" class="form-control" id="start" name="trip-start" value="2020-12-22"
-                                min="2020-12-22" max="2025-12-31">
-                        </div>
-                        <div class="col-12 col-md-6 ">
-                            <input type="time" id="appt" name="appt" class="form-control" min="09:00" max="23:00"
-                                value="17:30" required>
-                        </div>
-                    </div>
-
-                    <div class="row my-3">
-                        <div class="col-12 col-md-6 mb-3">
-                            <select name="personnes" class="custom-select">
-                                <option selected>Occasion</option>
-                                <option value="bh">Birthday</option>
-                                <option value="bp">Bapteme</option>
-                                <option value="evj">EVJ</option>
-                                <option value="m">mariage</option>
-                                <option value="s">soirée</option>
-                            </select>
-                        </div>
-                        <div class="col-12 col-md-6 ">
-                            <select name="personnes" class="custom-select">
-                                <option selected>Cuisine</option>
-                                <option value="T">Thai</option>
-                                <option value="G">Gastronomie</option>
-                                <option value="A">Asiatique</option>
-                                <option value="M">Marocaine</option>
-                                <option value="5">Menu 5 plats</option>
-                            </select>
-                        </div>
-                    </div>
-
-                </form>
-                <button type="button" class="btn btn-red mx-md-auto my-3 px-md-4 py-md-2 ">Book now</button>
+                </div>
+                <button type="button" class="btn btn-red mx-md-auto my-3 px-md-4 py-md-2 mb-4">know more</button>
             </div>
 
         </div>
-
-        <!-- blog -->
-        <h1 class=" title mt-5 text-center"> <span class="text-red text-uppercase">our</span> Blog</h1>
-        <img src="./public/img/decoration_line.png" alt="" class="mx-md-auto mx-0 mb-4">
-
-
-
-        </div>
     </section>
+
+
+
 
 
 

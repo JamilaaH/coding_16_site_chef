@@ -5,11 +5,13 @@ header
         .navbar-nav
             text-transform: uppercase
             font-family: 'ubuntu'
-            .nav-link
-                &:hover
-                    background-color: $colorRed
-                &:active
-                    background-color: $colorRed !important
+            .active
+                background-color: $colorRed
+                .nav-link
+                    &:hover
+                        background-color: $colorRed
+                    &:active
+                        background-color: $colorRed !important
 
 
     .carousel
@@ -46,6 +48,7 @@ header
 @media (max-width: 375px)
     header
         .navbar-collapse
+            z-index: 99
             background-color: white
             .nav-link
                 color: black !important
@@ -62,6 +65,7 @@ header
 @media (min-width: 376px) and (max-width: 575px)
     header
         .navbar-collapse
+            z-index: 99
             background-color: white
             .nav-link
                 color: black !important
@@ -78,6 +82,7 @@ header
 @media (min-width: 576px) and (max-width: 768px)
     header
         .navbar-collapse
+            z-index: 99
             background-color: white
             .nav-link
                 color: black !important

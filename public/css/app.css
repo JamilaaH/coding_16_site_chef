@@ -16118,7 +16118,7 @@ html #toTopBtn {
   color: white;
   bottom: 26px;
   right: 39px;
-  z-index: 98;
+  z-index: 100;
   padding: 17px;
   background-color: #B12A3B;
 }
@@ -16133,11 +16133,15 @@ header .navbar .navbar-nav {
   font-family: 'ubuntu';
 }
 
-header .navbar .navbar-nav .nav-link:hover {
+header .navbar .navbar-nav .active {
   background-color: #B12A3B;
 }
 
-header .navbar .navbar-nav .nav-link:active {
+header .navbar .navbar-nav .active .nav-link:hover {
+  background-color: #B12A3B;
+}
+
+header .navbar .navbar-nav .active .nav-link:active {
   background-color: #B12A3B !important;
 }
 
@@ -16179,6 +16183,7 @@ header .decor {
 
 @media (max-width: 375px) {
   header .navbar-collapse {
+    z-index: 99;
     background-color: white;
   }
   header .navbar-collapse .nav-link {
@@ -16199,6 +16204,7 @@ header .decor {
 
 @media (min-width: 376px) and (max-width: 575px) {
   header .navbar-collapse {
+    z-index: 99;
     background-color: white;
   }
   header .navbar-collapse .nav-link {
@@ -16218,6 +16224,7 @@ header .decor {
 
 @media (min-width: 576px) and (max-width: 768px) {
   header .navbar-collapse {
+    z-index: 99;
     background-color: white;
   }
   header .navbar-collapse .nav-link {
@@ -16239,8 +16246,16 @@ header .decor {
   font-family: 'courgette';
 }
 
+#about #list-tab .active {
+  background-color: #ffffff;
+  color: #B12A3B;
+  border-color: #B12A3B;
+}
+
 #about .list-group-item {
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   font-family: 'courgette';
   font-size: 18px;
 }
@@ -16263,12 +16278,33 @@ header .decor {
 
 @media (max-width: 426px) {
   #about img {
-    margin-left: auto;
-    margin-right: auto;
+    margin: 5px auto;
     display: block;
   }
-  #about .contenu {
+  #about .cart {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     text-align: center;
+  }
+  #about .list-group {
+    display: flex;
+    flex-direction: row;
+  }
+  #about .list-group .list-group-item {
+    width: 25vw;
+  }
+  #about .list-group .list-group-item:active {
+    background-color: #ffffff;
+    border-right: 0;
+    border-bottom: 5px #B12A3B solid;
+    color: #B12A3B;
+  }
+  #about .list-group .list-group-item:focus {
+    background-color: #ffffff;
+    border-right: 0;
+    border-bottom: 5px #B12A3B solid;
+    color: #B12A3B;
   }
 }
 
@@ -16285,7 +16321,12 @@ header .decor {
   width: 70%;
 }
 
+#book .corner {
+  z-index: 0;
+}
+
 #book .title {
+  z-index: 1;
   font-family: 'courgette';
 }
 
@@ -16305,11 +16346,14 @@ header .decor {
 
 @media (max-width: 426px) {
   #book {
-    padding: 0;
+    padding: 5px;
     margin: 0;
   }
   #book .fond {
     border-radius: 0;
+  }
+  #book .fond .input {
+    margin: 0 auto;
   }
 }
 
@@ -16402,5 +16446,6 @@ header .decor {
 @media (max-width: 426px) {
   #footer .about {
     width: 100%;
+    text-align: center;
   }
 }

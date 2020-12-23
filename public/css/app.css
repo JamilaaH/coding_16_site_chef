@@ -16162,9 +16162,8 @@ header .contenu {
 header .contenu .main-text {
   font-family: 'courgette';
   position: absolute;
-  bottom: 30%;
-  left: 15%;
-  width: 70%;
+  top: 30vw;
+  left: 0%;
   color: #FFF;
 }
 
@@ -16191,11 +16190,11 @@ header .decor {
   }
   header .contenu .main-text {
     bottom: 0;
-    left: 20%;
+    left: 0%;
   }
   header .contenu .main-text .title {
     text-align: center;
-    font-size: 20px;
+    font-size: 15px;
   }
   header .contenu .main-text .btn {
     padding: 0;
@@ -16215,7 +16214,7 @@ header .decor {
   }
   header .contenu .main-text .title {
     text-align: center;
-    font-size: 35px;
+    font-size: 25px;
   }
   header .contenu .main-text .btn {
     padding: 0;
@@ -16287,6 +16286,9 @@ header .decor {
     align-items: center;
     text-align: center;
   }
+  #about .contenuStory .texte {
+    width: 100% !important;
+  }
   #about .list-group {
     display: flex;
     flex-direction: row;
@@ -16348,6 +16350,9 @@ header .decor {
   #book {
     padding: 5px;
     margin: 0;
+  }
+  #book .title {
+    font-size: 30px;
   }
   #book .fond {
     border-radius: 0;

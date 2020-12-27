@@ -13,6 +13,13 @@ header
                     &:active
                         background-color: $colorRed !important
 
+        .navbar-collapse
+            z-index: 99
+            background-color: white
+            .nav-link
+                color: black !important
+
+
 
     .carousel
         position: absolute
@@ -27,8 +34,9 @@ header
         .main-text
             font-family: 'courgette'
             position: absolute
-            top: 30vw
-            left: 0%
+            top: 40%
+            left: 50%
+            transform: translate(-50%)
             color: #FFF
 
             .btn
@@ -41,60 +49,20 @@ header
         height: 10px
         background-color: black
         opacity: 0.7
+
         
 
 
-@media (max-width: 375px)
+
+
+@media (max-width: 767px)
     header
-        .navbar-collapse
-            z-index: 99
-            background-color: white
-            .nav-link
-                color: black !important
         .contenu
             .main-text
-                bottom: 0
-                left: 0%
-                .title
-                    text-align: center
-                    font-size: 15px
-                .btn
-                    padding: 0
-        
-@media (min-width: 376px) and (max-width: 575px)
-    header
-        .navbar-collapse
-            z-index: 99
-            background-color: white
-            .nav-link
-                color: black !important
-        .contenu
-            .main-text
-                bottom: 0
-                .title
-                    text-align: center
-                    font-size: 25px
+                top: 30%
+                left: 0
+                transform: translateX(0)
 
-                .btn
-                    padding: 0
-        
-@media (min-width: 576px) and (max-width: 768px)
-    header
-        .navbar-collapse
-            z-index: 99
-            background-color: white
-            .nav-link
-                color: black !important
-        .contenu
-            .main-text
-                bottom: 15%
-
-                .title
-                    text-align: center
-                    font-size: 35px
-
-                .btn
-                    padding: 0
         
 
 

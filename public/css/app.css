@@ -16145,6 +16145,15 @@ header .navbar .navbar-nav .active .nav-link:active {
   background-color: #B12A3B !important;
 }
 
+header .navbar .navbar-collapse {
+  z-index: 99;
+  background-color: white;
+}
+
+header .navbar .navbar-collapse .nav-link {
+  color: black !important;
+}
+
 header .carousel {
   position: absolute;
   top: 0;
@@ -16162,8 +16171,9 @@ header .contenu {
 header .contenu .main-text {
   font-family: 'courgette';
   position: absolute;
-  top: 30vw;
-  left: 0%;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%);
   color: #FFF;
 }
 
@@ -16180,64 +16190,11 @@ header .decor {
   opacity: 0.7;
 }
 
-@media (max-width: 375px) {
-  header .navbar-collapse {
-    z-index: 99;
-    background-color: white;
-  }
-  header .navbar-collapse .nav-link {
-    color: black !important;
-  }
+@media (max-width: 767px) {
   header .contenu .main-text {
-    bottom: 0;
-    left: 0%;
-  }
-  header .contenu .main-text .title {
-    text-align: center;
-    font-size: 15px;
-  }
-  header .contenu .main-text .btn {
-    padding: 0;
-  }
-}
-
-@media (min-width: 376px) and (max-width: 575px) {
-  header .navbar-collapse {
-    z-index: 99;
-    background-color: white;
-  }
-  header .navbar-collapse .nav-link {
-    color: black !important;
-  }
-  header .contenu .main-text {
-    bottom: 0;
-  }
-  header .contenu .main-text .title {
-    text-align: center;
-    font-size: 25px;
-  }
-  header .contenu .main-text .btn {
-    padding: 0;
-  }
-}
-
-@media (min-width: 576px) and (max-width: 768px) {
-  header .navbar-collapse {
-    z-index: 99;
-    background-color: white;
-  }
-  header .navbar-collapse .nav-link {
-    color: black !important;
-  }
-  header .contenu .main-text {
-    bottom: 15%;
-  }
-  header .contenu .main-text .title {
-    text-align: center;
-    font-size: 35px;
-  }
-  header .contenu .main-text .btn {
-    padding: 0;
+    top: 30%;
+    left: 0;
+    transform: translateX(0);
   }
 }
 

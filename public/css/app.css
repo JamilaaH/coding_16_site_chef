@@ -16145,15 +16145,6 @@ header .navbar .navbar-nav .active .nav-link:active {
   background-color: #B12A3B !important;
 }
 
-header .navbar .navbar-collapse {
-  z-index: 99;
-  background-color: white;
-}
-
-header .navbar .navbar-collapse .nav-link {
-  color: black !important;
-}
-
 header .carousel {
   position: absolute;
   top: 0;
@@ -16190,7 +16181,14 @@ header .decor {
   opacity: 0.7;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 770px) {
+  header .navbar-collapse {
+    z-index: 99;
+    background-color: white;
+  }
+  header .navbar-collapse .nav-link {
+    color: black !important;
+  }
   header .contenu .main-text {
     top: 30%;
     left: 0;
